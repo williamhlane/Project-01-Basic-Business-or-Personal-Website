@@ -75,8 +75,7 @@
         } else if (buttonText.innerHTML == "Stop Carousel" && fromWhere == "scbutton"){
             buttonText.innerHTML = "Start Carousel";
             carRun = false;
-        }
-        if(fromWhere == "load"){
+        } else if(fromWhere == "load"){
             //start the carRun carousel run boolean to true
             carRun = true;
             //change the text of the button to stop carousel
@@ -89,9 +88,13 @@
         }
         
     } 
+    //On window load run this anonymous function
     window.onload =  (() => {
-                             let buttonText = document.getElementById('startCarouselButton');
+                            //get the startCarouselButton and put it into the variable buttonText
+                            let buttonText = document.getElementById('startCarouselButton');
+                            //Set the innerHTML of the button to avoid null errors
                             buttonText.innerHTML = "Start Carousel";    
+                            //start the carousel
                             startCarousel('load');
 
                         })
