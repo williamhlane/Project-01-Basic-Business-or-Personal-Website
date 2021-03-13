@@ -25,10 +25,14 @@ h1 {
 
 .yvid {
     width: 200px;
-    height: 300px;
     display: block;
     margin: auto;
     
+}
+#car span {
+    width: 200px;
+    display:block;
+    margin: auto;
 }
 .yvid > iframe {
     width: 200px;
@@ -105,12 +109,21 @@ h2 {
 }
 
 /*--------------------*/
+/*--------VIDEO.html page-------------------*/
+#vidcontainer {
+    display: inline-grid;
+    grid-template-columns: 30% 30% 30%;  
+}
+.videosec iframe {
+    
+}
+/*-----------------------------------------*/
 /*HIDDEN MUST BE AT THE BOTTOM*/
 .hidden {
     display: none;
 }
 /*Small screen size*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     #main {
         float: none;
         width: 100%;
@@ -140,6 +153,13 @@ h2 {
     }
     #main img {
         width: 60%;
+    }
+    #vidcontainer {
+        display: block;
+    }
+    .videosec {
+        width: 49%;
+    
     }
 
 }
