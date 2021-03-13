@@ -1,3 +1,145 @@
+@font-face {
+    font-family: mp;
+    src: url('../fonts/MickCasterItalic.ttf') format('truetype');
+}
+
+body {
+    background-image: linear-gradient(to top, rgb(255,255,255) , rgb(0,120,255));
+    background-size: 100% 4vw;
+    background-repeat: no-repeat;
+    width: 75%;
+    margin: auto;
+}
+/*This CSS is for the document header and the carousel*/ 
+header {
+    height: 4vw;
+}
+h1 {
+    font-family: mp;
+    font-size: 2vw;
+    color: rgb(0, 119, 238);
+    text-shadow: -1px -1px black;
+    margin-top: 0px;
+    letter-spacing: 5px;
+}
+
+.yvid {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    
+}
+.yvid > iframe {
+    width: 200px;
+    height: 200px;
+}
+.yvid > figcaption {
+    font-family: mp;
+    text-shadow: -1px -1px rgb(0, 119, 238);
+}
+/*----------------------------------------------*/
+/*This is for the navigation and the main article*/
+nav {
+    float: left;
+    padding-right: 5px;
+    width: 20%;
+  
+}
+
+#main {
+    display: inline-block;
+    width: 75%;
+
+
+}
+nav ul {
+    list-style: none;
+
+}
+#main > section {
+    overflow: hidden;
+}
+#main img {
+    width: 25%;
+    float: right;
+    padding: 10px;
+}
+#main img.imgleft {
+    float: left; 
+}
+.block {
+    display: block;
+}
+nav a {
+    font-family: mp;
+    text-decoration: none;
+    font-size: 25px;
+    color: grey;
+    text-shadow: -1px -1px black;
+
+}
+nav a:hover {
+    color:rgb(0, 119, 238);
+}
+#main p {
+    font-size: 20px;
+    text-shadow: -1px -1px rgb(0, 119, 238);
+}
+h2 {
+    font-size: 35px;
+    text-shadow: -1px -1px rgb(0, 119, 238);
+}
+/*-----------------------------------------------*/
+/*CONTACT US PAGE*/
+.contactusform {
+    font-family: mp;
+    font-size: 25px;
+    text-shadow: -1px -1px rgb(0, 119, 238);
+    display: block;
+    width: 50%;
+    margin: 10px;
+}
+#main button {
+    width: 25%;
+}
+
+/*--------------------*/
+/*HIDDEN MUST BE AT THE BOTTOM*/
 .hidden {
     display: none;
+}
+/*Small screen size*/
+@media screen and (max-width: 800px) {
+    #main {
+        float: none;
+        width: 100%;
+    }
+    nav{
+        display: inline-block;
+        float: none;
+        height: 20px;
+        width: 100%;
+    }
+    nav a {
+        padding-right: 10px;
+    }
+
+    nav ul li {
+       display:inline;
+
+    }
+    body {
+        background-size: 100% 10vw;
+    }
+    header {
+        height: 10vw;
+    }
+    h1 {
+        font-size: 6vw;
+    }
+    #main img {
+        width: 60%;
+    }
+
 }
