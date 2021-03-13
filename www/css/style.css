@@ -8,6 +8,7 @@ body {
     background-size: 100% 4vw;
     background-repeat: no-repeat;
     width: 75%;
+
     margin: auto;
 }
 /*This CSS is for the document header and the carousel*/ 
@@ -30,9 +31,10 @@ h1 {
     
 }
 #car span {
-    width: 200px;
+    width: 210px;
     display:block;
     margin: auto;
+    text-align: center
 }
 .yvid > iframe {
     width: 200px;
@@ -41,6 +43,17 @@ h1 {
 .yvid > figcaption {
     font-family: mp;
     text-shadow: -1px -1px rgb(0, 119, 238);
+}
+#car button {
+    text-shadow: -1px -1px rgb(0, 119, 238);
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#car button:hover {
+    background-color: rgb(150,150,150);
+
 }
 /*----------------------------------------------*/
 /*This is for the navigation and the main article*/
@@ -163,3 +176,4 @@ h2 {
     }
 
 }
+
