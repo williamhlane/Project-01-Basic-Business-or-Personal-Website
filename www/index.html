@@ -1,97 +1,140 @@
 <!--Set doctype to html5 -->
 <!DOCTYPE html>
-
+<!--html tag set language to US english-->
 <html lang='en-US'>
+    <!--Start end tag-->
     <head>
+        <!--set charset encodings to UTF-8-->
         <meta charset="UTF-8">
+        <!--Set title to the web page-->
         <title>Harrison's Portfolio</title>
+        <!--Link to css file-->
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!--set icon image to the web page-->
         <link rel="icon" href="./images/icon.png" type="image/icon" />
+        <!--use the meta tag to set the description of the web page-->
         <meta name="description" content="This is an Harrisons Portfolio web site." />
+        <!--Link to the Jave script file-->
         <script src='./js/script.js'></script>
+        <!--set the meta tag to set the view point-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--end head tag-->
     </head>
+    <!--start body tag-->
     <body>
+        <!--start header to the body-->
         <header>
-            <!---Header-->
+           <!--This h1 is the site title in the header-->
            <h1>Harrison's Portfolio</h1>
         </header>
+        <!--this article tag is the carousel for the youtube vidoes-->
         <article id="car">
+            <!--This span is the container for the buttons in the carousel article-->
             <span>
+                <!--This button calls the javscript to start or stop the carousel-->
                 <button id='startCarouselButton' onclick="startCarousel('scbutton')">Start Carousel</button>
+                <!--This buttons will skip to the next video in the carousel-->
                 <button onclick="nextImg('false')">Next Video</button>
             </span>
+                <!--This figure contain one of the youtube videos in the carousel-->
                 <figure class="yvid">
-                    <!--remote desktop-->
+                    <!--This is the Iframe for the remote desktop video-->
                     <iframe src="https://www.youtube.com/embed/KXCXP2xIB9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
                     <figcaption>This video is on how to Remote Desktop using LinuxMint.</figcaption>
                 </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
                 <figure class="hidden yvid">
-                    <!--learn python lesson 2-->
+                    <!--This is the Iframe for the learn python lesson 2-->
                     <iframe src="https://www.youtube.com/embed/jCqdL6AlAXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
                     <figcaption>This is the second lesson on Python.</figcaption>
                 </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
                 <figure class="hidden yvid">
-                    <!--Route from wifi adapter to the ethernet port using a pi-->
+                    <!--This is the Iframe for the Route from wifi adapter to the ethernet port using a pi-->
                     <iframe src="https://www.youtube.com/embed/cOUUJmvXHI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
                     <figcaption>This video is about using the Raspberry Pi to route.</figcaption>
                 </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
                 <figure class="hidden yvid">
-                    <!--Python lesson 1--->
+                    <!--This is the Iframe for the Python lesson 1--->
                     <iframe src="https://www.youtube.com/embed/nyty3FkEiFA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
                     <figcaption>Learning Python on Ubuntu lesson 1.</figcaption>
                 </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
                 <figure  class="hidden yvid">
-                                    <!--LAMPP-->
+                    <!-- This is the Iframe for the  LAMPP-->
                     <iframe src="https://www.youtube.com/embed/dUXDybyBn4I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
                     <figcaption>Install Lamp server on Ubuntu with PHP and Python.</figcaption>
                 </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
                 <figure class="hidden yvid">
-                    <!--DOSBOX-->
+                    <!--This is the Iframe for the  DOSBOX-->
                     <iframe src="https://www.youtube.com/embed/lA2oyhwbBno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
                     <figcaption>Use DosBox to install Doom on Ubuntu</figcaption>
                 </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
                 <figure class="hidden yvid">
-                    <!--VBOX guest additions-->
+                    <!--This is the Iframe for the  VBOX guest additions-->
                     <iframe src="https://www.youtube.com/embed/e38rkOjZmgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
                     <figcaption>Install VirtualBox Guest additions on Ubuntu.</figcaption>
                 </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
                 <figure class="hidden yvid">
-                    <!--Clone commit and push GIT-->
+                    <!--This is the Iframe for the  Clone commit and push GIT-->
                     <iframe src="https://www.youtube.com/embed/X-xOpHpguO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
                     <figcaption>Git clone, commit and push. Ubuntu.</figcaption>
                 </figure>    
-
         </article>
+        <!--This is the begining of the Nav tag-->
         <nav>
-            <!--Nav bar, has the links to other pages-->
+            <!--This is the begining of the navigate list-->
             <ul>
+                <!--these are the links in the navigation list-->
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./videos.html">Videos</a></li>
                 <li><a href="./contactUs.html">Contact</a></li>
             </ul>
         </nav>
+        <!--This is the begining of the article tag that contains the main content of the page-->
         <article id="main">
             <!--article will have paragraphs, forms and video lists it is the main element of the page people will interact with-->
+            <!--This section is sections of the homepage-->
             <section>
-                <img src="./images/1.jpg" alt="" />
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                  
+                <!--This is a image.-->
+                <img src="./images/1.jpg" alt="This is an image of Harrison and Brittnay." />
+                <!--This is a paragraph on the home page-->
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                  
                 </p>
    
             </section>
+            <!--This section is sections of the homepage-->
             <section>
-                <img src="./images/2.jpg" class="imgleft" alt="" />
-                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <!--This is a image.-->
+                <img src="./images/2.jpg" class="imgleft" alt="This is a picture of Harrison in the truck." />
+                <!--This is a paragraph on the home page-->
+                 <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
 
            </section>
+           <!--This section is sections of the homepage-->
            <section>
-            <img src="./images/1.jpg" alt="" />
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                  
-            </p>
-
-        </section>
-            </article>
+               <!--This is a image.-->
+                <img src="./images/1.jpg" alt="This is an image of Harrison and Brittnay." />
+                <!--This is a paragraph on the home page-->
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                  
+                </p>
+            </section>
+        </article>
     </body>
 </html>

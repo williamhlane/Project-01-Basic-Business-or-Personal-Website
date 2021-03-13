@@ -1,112 +1,153 @@
-<!--Set Doctype for HTML5-->
+<!--Set doctype to html5 -->
 <!DOCTYPE html>
-<!--html tag and set language to english us-->
+<!--html tag set language to US english-->
 <html lang='en-US'>
-    <!--open head tag-->
+    <!--Start end tag-->
     <head>
+        <!--set charset encodings to UTF-8-->
         <meta charset="UTF-8">
+        <!--Set title to the web page-->
         <title>Harrison's Portfolio</title>
+        <!--Link to css file-->
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!--set icon image to the web page-->
         <link rel="icon" href="./images/icon.png" type="image/icon" />
+        <!--use the meta tag to set the description of the web page-->
         <meta name="description" content="This is an Harrisons Portfolio web site." />
+        <!--Link to the Jave script file-->
         <script src='./js/script.js'></script>
+        <!--set the meta tag to set the view point-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--end head tag-->
     </head>
+    <!--start body tag-->
     <body>
+        <!--start header to the body-->
         <header>
-            <!---Header-->
+           <!--This h1 is the site title in the header-->
            <h1>Harrison's Portfolio</h1>
         </header>
+        <!--this article tag is the carousel for the youtube vidoes-->
         <article id="car">
+            <!--This span is the container for the buttons in the carousel article-->
             <span>
+                <!--This button calls the javscript to start or stop the carousel-->
                 <button id='startCarouselButton' onclick="startCarousel('scbutton')">Start Carousel</button>
+                <!--This buttons will skip to the next video in the carousel-->
                 <button onclick="nextImg('false')">Next Video</button>
             </span>
-            <figure class="yvid">
-                <!--remote desktop-->
-                <iframe src="https://www.youtube.com/embed/KXCXP2xIB9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <figcaption>This video is on how to Remote Desktop using LinuxMint.</figcaption>
-            </figure>
-            <figure class="hidden yvid">
-                <!--learn python lesson 2-->
-                <iframe src="https://www.youtube.com/embed/jCqdL6AlAXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <figcaption>This is the second lesson on Python.</figcaption>
-            </figure>
-            <figure class="hidden yvid">
-                <!--Route from wifi adapter to the ethernet port using a pi-->
-                <iframe src="https://www.youtube.com/embed/cOUUJmvXHI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <figcaption>This video is about using the Raspberry Pi to route.</figcaption>
-            </figure>
-            <figure class="hidden yvid">
-                <!--Python lesson 1--->
-                <iframe src="https://www.youtube.com/embed/nyty3FkEiFA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <figcaption>Learning Python on Ubuntu lesson 1.</figcaption>
-            </figure>
-            <figure  class="hidden yvid">
-                                <!--LAMPP-->
-                <iframe src="https://www.youtube.com/embed/dUXDybyBn4I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <figcaption>Install Lamp server on Ubuntu with PHP and Python.</figcaption>
-            </figure>
-            <figure class="hidden yvid">
-                <!--DOSBOX-->
-                <iframe src="https://www.youtube.com/embed/lA2oyhwbBno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <figcaption>Use DosBox to install Doom on Ubuntu</figcaption>
-            </figure>
-            <figure class="hidden yvid">
-                <!--VBOX guest additions-->
-                <iframe src="https://www.youtube.com/embed/e38rkOjZmgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <figcaption>Install VirtualBox Guest additions on Ubuntu.</figcaption>
-            </figure>
-            <figure class="hidden yvid">
-                <!--Clone commit and push GIT-->
-                <iframe src="https://www.youtube.com/embed/X-xOpHpguO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <figcaption>Git clone, commit and push. Ubuntu.</figcaption>
-            </figure>    
-         </article>
+                <!--This figure contain one of the youtube videos in the carousel-->
+                <figure class="yvid">
+                    <!--This is the Iframe for the remote desktop video-->
+                    <iframe src="https://www.youtube.com/embed/KXCXP2xIB9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
+                    <figcaption>This video is on how to Remote Desktop using LinuxMint.</figcaption>
+                </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
+                <figure class="hidden yvid">
+                    <!--This is the Iframe for the learn python lesson 2-->
+                    <iframe src="https://www.youtube.com/embed/jCqdL6AlAXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
+                    <figcaption>This is the second lesson on Python.</figcaption>
+                </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
+                <figure class="hidden yvid">
+                    <!--This is the Iframe for the Route from wifi adapter to the ethernet port using a pi-->
+                    <iframe src="https://www.youtube.com/embed/cOUUJmvXHI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
+                    <figcaption>This video is about using the Raspberry Pi to route.</figcaption>
+                </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
+                <figure class="hidden yvid">
+                    <!--This is the Iframe for the Python lesson 1--->
+                    <iframe src="https://www.youtube.com/embed/nyty3FkEiFA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
+                    <figcaption>Learning Python on Ubuntu lesson 1.</figcaption>
+                </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
+                <figure  class="hidden yvid">
+                    <!-- This is the Iframe for the  LAMPP-->
+                    <iframe src="https://www.youtube.com/embed/dUXDybyBn4I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
+                    <figcaption>Install Lamp server on Ubuntu with PHP and Python.</figcaption>
+                </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
+                <figure class="hidden yvid">
+                    <!--This is the Iframe for the  DOSBOX-->
+                    <iframe src="https://www.youtube.com/embed/lA2oyhwbBno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
+                    <figcaption>Use DosBox to install Doom on Ubuntu</figcaption>
+                </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
+                <figure class="hidden yvid">
+                    <!--This is the Iframe for the  VBOX guest additions-->
+                    <iframe src="https://www.youtube.com/embed/e38rkOjZmgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
+                    <figcaption>Install VirtualBox Guest additions on Ubuntu.</figcaption>
+                </figure>
+                <!--This figure contain one of the youtube videos in the carousel-->
+                <figure class="hidden yvid">
+                    <!--This is the Iframe for the  Clone commit and push GIT-->
+                    <iframe src="https://www.youtube.com/embed/X-xOpHpguO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--this is the figure caption for the youtube video-->
+                    <figcaption>Git clone, commit and push. Ubuntu.</figcaption>
+                </figure>    
+        </article>
+        <!--This is the begining of the Nav tag-->
         <nav>
-            <!--Nav bar, has the links to other pages-->
+            <!--This is the begining of the navigate list-->
             <ul>
+                <!--these are the links in the navigation list-->
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./videos.html">Videos</a></li>
                 <li><a href="./contactUs.html">Contact</a></li>
             </ul>
         </nav>
+        <!--This is the begining of the article tag that contains the main content of the page-->
         <article id="main">
             <!--article will have paragraphs, forms and video lists-->
+            <!--This is the title for the main article on the videos page-->
             <h2>Videos</h2>
-                <!--show in multiple-column layout-->
+                <!--this is the container for the grid-->
                 <section id="vidcontainer">
+                    <!--this on of the section for the videos grids-->
                     <section class="videosec">
-                        <!--remote desktop-->
+                        <!--This is the youtube video iframe for remote desktop-->
                         <iframe src="https://www.youtube.com/embed/KXCXP2xIB9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
+                    <!--this on of the section for the videos grids-->
                     <section class="videosec">
-                        <!--learn python lesson 2-->
+                        <!--This is the youtube video iframe for learn python lesson 2-->
                         <iframe src="https://www.youtube.com/embed/jCqdL6AlAXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
+                    <!--this on of the section for the videos grids-->
                     <section class="videosec">
-                        <!--Route from wifi adapter to the ethernet port using a pi-->
+                        <!--This is the youtube video iframe for Route from wifi adapter to the ethernet port using a pi-->
                         <iframe src="https://www.youtube.com/embed/cOUUJmvXHI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
+                    <!--this on of the section for the videos grids-->
                     <section class="videosec">
-                        <!--Python lesson 1--->
+                        <!--This is the youtube video iframe for Python lesson 1--->
                         <iframe src="https://www.youtube.com/embed/nyty3FkEiFA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
+                    <!--this on of the section for the videos grids-->
                     <section class="videosec">
-                        <!--LAMPP-->
+                        <!--This is the youtube video iframe for LAMPP-->
                         <iframe src="https://www.youtube.com/embed/dUXDybyBn4I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
+                    <!--This is the youtube video iframe for this on of the section for the videos grids-->
                     <section class="videosec">
-                        <!--DOSBOX-->
+                        <!--This is the youtube video iframe for DOSBOX-->
                         <iframe src="https://www.youtube.com/embed/lA2oyhwbBno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
+                    <!--This is the youtube video iframe for this on of the section for the videos grids-->
                    <section class="videosec">
-                        <!--VBOX guest additions-->
+                        <!--This is the youtube video iframe for VBOX guest additions-->
                         <iframe src="https://www.youtube.com/embed/e38rkOjZmgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
+                    <!--this on of the section for the videos grids-->
                     <section class="videosec">
-                        <!--Clone commit and push GIT-->
+                        <!--This is the youtube video iframe for Clone commit and push GIT-->
                         <iframe src="https://www.youtube.com/embed/X-xOpHpguO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
                 </section>
