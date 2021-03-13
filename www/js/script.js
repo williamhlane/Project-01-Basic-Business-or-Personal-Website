@@ -59,11 +59,13 @@
     ////startCarousel FUNCTION START//////////////////////////////////////
     //this is the function to start the carousel and collect data about 
     //where it is coming from using the a argument
+
     let startCarousel = (fromWhere) => {
-      //get the start/stop carousel button information 
-      let buttonText = document.getElementById('startCarouselButton');
+
         //if the cutton says start carousel and it is from the start carousel
         //button called this function then running this
+        //get the start/stop carousel button information 
+        let buttonText = document.getElementById('startCarouselButton');
         if(buttonText.innerHTML == "Start Carousel" && fromWhere == "scbutton"){
             //start the carRun carousel run boolean to true
             carRun = true;
@@ -73,13 +75,26 @@
         } else if (buttonText.innerHTML == "Stop Carousel" && fromWhere == "scbutton"){
             buttonText.innerHTML = "Start Carousel";
             carRun = false;
-        } 
+        }
+        if(fromWhere == "load"){
+            //start the carRun carousel run boolean to true
+            carRun = true;
+            //change the text of the button to stop carousel
+            buttonText.innerHTML = "Stop Carousel";
+        }
         ///if carRun is true AND a setTimeout is not running
         //then call nextImg function
         if(carRun == true && timeOutRunning == false){
             nextImg(true);
         }
         
-    }
+    } 
+    window.onload =  (() => {
+                             let buttonText = document.getElementById('startCarouselButton');
+                            buttonText.innerHTML = "Start Carousel";    
+                            startCarousel('load');
+
+                        })
+   
     ///END startCarousel FUNCTION///////////////////////////////////////////////
     //########################END Carousel CODE#############################////

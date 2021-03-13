@@ -1,179 +1,283 @@
+/*This is to use a local font*/
 @font-face {
+    /*this is to name the font*/
     font-family: mp;
+    /*This is the url to the font file*/
     src: url('../fonts/MickCasterItalic.ttf') format('truetype');
 }
-
+/*This is to set css for the body tag*/
 body {
+    /*This is to set the background image with linear gradient*/
     background-image: linear-gradient(to top, rgb(255,255,255) , rgb(0,120,255));
+    /*This si the set the background size to keep it to the top*/
     background-size: 100% 4vw;
+    /*This is to prevent it from repeating itself*/
     background-repeat: no-repeat;
+    /*This sets the width to 75% so we can center everthing in it with margin auto*/
     width: 75%;
-
+    /*This is to center everything in the body*/
     margin: auto;
 }
 /*This CSS is for the document header and the carousel*/ 
-header {
+/*This is the body header*/
+body > header {
     height: 4vw;
 }
+/*h1 is only used in the body header for the page title*/
 h1 {
+    /*This sets the font family */
     font-family: mp;
+    /*This set the font size*/
     font-size: 2vw;
+    /*this set the font color using rgb value*/
     color: rgb(0, 119, 238);
+    /*This puts text shaddowing on the text*/
     text-shadow: -1px -1px black;
+    /*This sets to margin top to 0*/
     margin-top: 0px;
+    /*this adds additions spacing between letters*/
     letter-spacing: 5px;
 }
-
+/*This is the class for sections of the carousel containing the youtube videos*/
 .yvid {
+    /*This sets the width for the sections of the carousel*/
     width: 200px;
+    /*this will set it to display block so nothing will be beside it*/
     display: block;
+    /*Setting margin to auto will center it as long and the width is set*/
     margin: auto;
     
 }
+/*This span contains the buttons for the carousel is right above the videos*/
 #car span {
+    /*this sets the width for the span*/
     width: 210px;
+    /*This sets display block so nothing will go along side of the span*/
     display:block;
+    /*margin auto will center is as long as the width is set and is display block*/
     margin: auto;
+    /*this centers the buttons in the span*/
     text-align: center
 }
+/*This is css for iframes that are direct decendents of the .yvid class*/
 .yvid > iframe {
+    /*This will set the width of the iframe*/
     width: 200px;
+    /*this is the height of the iframe*/
     height: 200px;
 }
+/*this is the css for the figcaptions that are direct decendents of the .yvid class*/
 .yvid > figcaption {
+    /*this set the font family of the figcaption text*/
     font-family: mp;
+    /*This puts text shaddowing behind the text.*/
     text-shadow: -1px -1px rgb(0, 119, 238);
 }
+/*this is the css for the buttons in the article with the car id*/
 #car button {
+    /*This puts text shaddowing behind the text.*/
     text-shadow: -1px -1px rgb(0, 119, 238);
+    /*this set the background color of the button to black*/
     background-color: black;
+    /*This sets the font color to white on the buttons*/
     color: white;
+    /*This removes the borders of the buttons*/
     border: none;
+    /*This sets the border radius of the button to round the borders of the button*/
     border-radius: 5px;
 }
+/*this css is apply to the buttons in the car article if it is hovered over*/
 #car button:hover {
+    /*it sets the bgcolor to grey*/
     background-color: rgb(150,150,150);
-
 }
 /*----------------------------------------------*/
 /*This is for the navigation and the main article*/
-nav {
-    float: left;
-    padding-right: 5px;
-    width: 20%;
-  
-}
-
+/*This is the CSS for the main article that contains the content that the users interact with the most*/
 #main {
+    /*It is set to inline block so it will go to the left of the nav without wrapping around it*/
     display: inline-block;
+    /*set width to 75%*/
     width: 75%;
-
-
 }
+/*This is the nav tag that will have the page links*/
+nav {
+    /*This will make it float left of the main article tag*/
+    float: left;
+    /*This gives is 5pixels padding on all sides*/
+    padding-right: 5px;
+    /*the width is set to 20 percent*/
+    width: 20%;  
+}
+/*This is the CSS for the Nav list*/
 nav ul {
+    /*Remove list style*/
     list-style: none;
-
 }
-#main > section {
-    overflow: hidden;
-}
+/*This css applies to the images inside of the article with the main ID*/
 #main img {
+    /*set the width of the image to 25%*/
     width: 25%;
+    /*This will float the image to the right  of the paraphraph text*/
     float: right;
+    /*This will put padding on all 4 sides of the image*/
     padding: 10px;
 }
+/*This will float any image with the imgleft class to the left*/
 #main img.imgleft {
+    /*This will float the image left of the text*/
     float: left; 
 }
+/*This the block class only used to change block for the carousel*/
 .block {
+    /*This changes the display*/
     display: block;
 }
+/*this is css will be applied to the links in the nav tag*/
 nav a {
+    /*this eill change the font family to a local font*/
     font-family: mp;
+    /*This will remove all text decoration of the links*/
     text-decoration: none;
+    /*This will set the font size of the link*/
     font-size: 25px;
+    /*This will set the font color to grey*/
     color: grey;
+    /*This will but text shadowing behind the text*/
     text-shadow: -1px -1px black;
-
 }
+/*This text will be applied if we hover over the links in the nav tag*/
 nav a:hover {
+    /*this will change the font color to the rgb value 0 119 238*/
     color:rgb(0, 119, 238);
 }
+/*This CSS is for the p tag in article within the article with the main id*/
 #main p {
+    /*This will change the font size*/
     font-size: 20px;
+    /*This will set the text-shadow for the text*/
     text-shadow: -1px -1px rgb(0, 119, 238);
 }
+/*The h2 tag is for the titles in the article with the main id*/
 h2 {
+    /*Set font size to 35px*/
     font-size: 35px;
+    /*Put text shaddowing with the rgb value 0 119 238*/
     text-shadow: -1px -1px rgb(0, 119, 238);
 }
 /*-----------------------------------------------*/
 /*CONTACT US PAGE*/
+/*This is the class for all tags in the contact us form*/
 .contactusform {
+    /*Set the font to a local font*/
     font-family: mp;
+    /*Set the font size to 25px*/
     font-size: 25px;
+    /*set the text shadow with the color rgb 0 119 238*/
     text-shadow: -1px -1px rgb(0, 119, 238);
+    /*set the display to block*/
     display: block;
+    /*Set the width to 50%*/
     width: 50%;
+    /*set margin to 10 px*/
     margin: 10px;
 }
-#main button {
+/*This is for the button that are direct decendents of form that are direct decendents of th article with the main id*/
+#main > form > button {
+    /*This will set the width of the button*/
     width: 25%;
 }
-
 /*--------------------*/
 /*--------VIDEO.html page-------------------*/
+/*This is the vidcontainer that will be the grid for the youtube videos*/
 #vidcontainer {
+    /*this sets the display to inline-grid*/
     display: inline-grid;
+    /*this sets the column wisdth of the grid*/
     grid-template-columns: 30% 30% 30%;  
 }
-.videosec iframe {
-    
-}
 /*-----------------------------------------*/
-/*HIDDEN MUST BE AT THE BOTTOM*/
-.hidden {
-    display: none;
-}
-/*Small screen size*/
+/*Small screen size screen widths below 900px*/
+/*Add rules for desktop computer browsers less then 900px*/
 @media screen and (max-width: 900px) {
+    /*these rules are for the aritle with the main id*/
     #main {
+        /*remove float so main will go below the nav*/
         float: none;
+        /*set width to 100%*/
         width: 100%;
     }
     nav{
-        display: inline-block;
+        /*Remove float*/
         float: none;
-        height: 20px;
+        /*Set width to 100%*/
         width: 100%;
     }
+    /*this is for the links in the nav tag*/
     nav a {
+        /*Set padding on the right side to 10px*/
         padding-right: 10px;
     }
-
+   /*This css is for the li in ul that is in the nav tag*/
     nav ul li {
+    /*set the nav list to inline so they line up side by side*/
        display:inline;
-
     }
+    /*This is for the body*/
     body {
-        background-size: 100% 10vw;
+        /*set the back ground size to 100% width and height to 10vw*/
+        background-size: 100% 10vw;    
     }
-    header {
+    /*this is for the body header witch contains the title*/
+    body > header {
+        /*set the height to 10vw*/
         height: 10vw;
     }
+    /*This is the h1 in the body header that is the title*/
     h1 {
+        /*set font size to 6vw*/
         font-size: 6vw;
     }
+    /*This is the width for the img in the main article*/
     #main img {
+        /*Set the width to 60%*/
         width: 60%;
     }
+    /*this is for the vidcontainer that is on the video.html page*/
     #vidcontainer {
+        /*set the display to block to take up the width of the parent element*/
         display: block;
     }
+    /*This is the sections inside the main article on the video.html page*/
     .videosec {
-        width: 49%;
-    
+        /*set display to inline so they will not take up entire width and go side by side*/
+        display: inline;
+        /*set width to 48% so they will go next to each other*/
+        width: 48%;
     }
 
 }
+@media screen and (max-width: 400px) {
+    body {
+      /*set the back ground size to 100% width and height to 10vw*/
+     background-size: 100% 20vw;    
+    }
+    /*this is for the body header witch contains the title*/
+    body > header {
+        /*set the height to 10vw*/
+         height: 20vw;
+    }
+    #main p {
+        /*This will change the font size*/
+        font-size: 15px;
+    }
+}
 
+
+
+
+
+/*This is the hidden class, anything with this will not display until javascript changes it.*/
+.hidden {
+    display: none;
+}
