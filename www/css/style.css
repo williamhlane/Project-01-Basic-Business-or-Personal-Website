@@ -57,7 +57,8 @@ h1 {
     /*margin auto will center is as long as the width is set and is display block*/
     margin: auto;
     /*this centers the buttons in the span*/
-    text-align: center
+    text-align: center;
+    padding-bottom: 5px;
 }
 /*This is css for iframes that are direct decendents of the .yvid class*/
 .yvid > iframe {
