@@ -58,6 +58,7 @@ h1 {
     margin: auto;
     /*this centers the buttons in the span*/
     text-align: center;
+    
     padding-bottom: 5px;
 }
 /*This is css for iframes that are direct decendents of the .yvid class*/
@@ -78,19 +79,18 @@ h1 {
 #car button {
     /*This puts text shaddowing behind the text.*/
     text-shadow: -1px -1px rgb(0, 119, 238);
-    /*this set the background color of the button to black*/
-    background-color: black;
     /*This sets the font color to white on the buttons*/
     color: white;
     /*This removes the borders of the buttons*/
     border: none;
     /*This sets the border radius of the button to round the borders of the button*/
-    border-radius: 5px;
+    border-radius: 15px;
+    background-image: linear-gradient(to top, rgb(155,155,155) , rgb(0,0,0));
 }
 /*this css is apply to the buttons in the car article if it is hovered over*/
 #car button:hover {
-    /*it sets the bgcolor to grey*/
-    background-color: rgb(150,150,150);
+    /*This sets a linear-gradient background on the button*/
+    background-image: linear-gradient(to top, rgb(246, 3, 3) , rgb(0,0,0));
 }
 /*----------------------------------------------*/
 /*This is for the navigation and the main article*/
