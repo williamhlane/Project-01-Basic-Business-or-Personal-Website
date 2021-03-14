@@ -279,11 +279,6 @@ h2 {
         font-size: 15px;
     }
 }
-
-
-
-
-
 /*This is the hidden class, anything with this will not display until javascript changes it.*/
 .hidden {
     display: none;
